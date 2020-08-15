@@ -9,7 +9,7 @@ namespace CSharpInheritance.YourGarage
         //methods
         public void Drive()
         {
-            Console.WriteLine("The car moves foward.");
+            Console.WriteLine($"The car moves foward.");
         }
 
         public void Brake()

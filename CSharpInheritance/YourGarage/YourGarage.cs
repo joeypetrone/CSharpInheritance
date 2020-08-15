@@ -10,30 +10,36 @@ namespace CSharpInheritance.YourGarage
         {
             Console.WriteLine("In Your Garage app.");
 
-            var car = new Car()
+            var vehicle = new Vehicle()
             {
                 Color = "green",
                 PassengerOccupancy = 4
             };
 
-            Console.WriteLine(car.FuelTank);
+            Console.WriteLine(vehicle.FuelTank);
 
-            car.Refuel();
+            vehicle.Refuel();
 
-            Console.WriteLine(car.FuelTank);
+            Console.WriteLine(vehicle.FuelTank);
 
-            car.FuelTank -= 10;
+            vehicle.FuelTank -= 10;
 
-            Console.WriteLine(car.FuelTank);
+            Console.WriteLine(vehicle.FuelTank);
 
-            car.Refuel();
+            vehicle.Refuel();
 
-            Console.WriteLine(car.FuelTank);
+            Console.WriteLine(vehicle.FuelTank);
 
 
             // Build a collection of all vehicles that fly
             // With a single `foreach`, have each vehicle Fly()
 
+            List<Car> cars = new List<Car> { new NissanLeaf(), new MercedesBenz() };
+
+            foreach(var car in cars)
+            {
+                car.Drive();
+            }
             // Build a collection of all vehicles that operate on roads
             // With a single `foreach`, have each road vehicle Drive()
 
