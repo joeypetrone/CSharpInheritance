@@ -33,15 +33,22 @@ namespace CSharpInheritance.YourGarage
 
             // Build a collection of all vehicles that fly
             // With a single `foreach`, have each vehicle Fly()
+            List<Aircraft> planes = new List<Aircraft> { new Boeing747(), new DA40() };
 
+            foreach (var plane in planes)
+            {
+                plane.Fly();
+            }
+
+            // Build a collection of all vehicles that operate on roads
+            // With a single `foreach`, have each road vehicle Drive()
             List<Car> cars = new List<Car> { new NissanLeaf(), new MercedesBenz() };
 
             foreach(var car in cars)
             {
                 car.Drive();
             }
-            // Build a collection of all vehicles that operate on roads
-            // With a single `foreach`, have each road vehicle Drive()
+
 
             // Build a collection of all vehicles that operate on water
             // With a single `foreach`, have each water vehicle Drive()
