@@ -52,6 +52,12 @@ namespace CSharpInheritance.YourGarage
 
             // Build a collection of all vehicles that operate on water
             // With a single `foreach`, have each water vehicle Drive()
+            List<Watercraft> boats = new List<Watercraft> { new SeaDoo(), new MasterCraft() };
+
+            foreach (var boat in boats)
+            {
+                boat.Drive();
+            }
         }
     }
 }
