@@ -10,6 +10,7 @@ namespace CSharpInheritance
         static void Main(string[] args)
         {
             var lunchBuddies = new LunchBuddies.LunchBuddies();
+            var yourGarage = new YourGarage.YourGarage();
 
             do
             {
@@ -20,6 +21,13 @@ namespace CSharpInheritance
                 if (runNow)
                 {
                     lunchBuddies.Run();
+                }
+
+                runNow = runConsoleApp("Your Garage");
+
+                if (runNow)
+                {
+                    yourGarage.Run();
                 }
 
             } while (loopProgram());
